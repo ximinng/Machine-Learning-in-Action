@@ -20,6 +20,13 @@ They are less efficient than the implementations in the Python standard library.
     * 除最后一列，每一列表达样本的一个特征(feature)
     * 最后一列成为标记(label)
    
+   
+* MNIST Database
+
+手写数字
+
+    * csv 格式：https://pjreddie.com/projects/mnist-in-csv/
+   
 ## Algorithms
 
 
