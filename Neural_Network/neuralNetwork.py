@@ -37,7 +37,6 @@ class neuralNetwork:
               inputs_list,
               targets_list):
         """train the neural network"""
-        """query the neural network"""
         # convert inputs list to 2d list
         inputs = np.array(inputs_list, ndmin=2).T
         targets = np.array(targets_list, ndmin=2).T

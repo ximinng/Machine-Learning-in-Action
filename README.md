@@ -4,9 +4,15 @@ All algorithms implemented in Python (for education)
 These implementations are for demonstration purposes.
 They are less efficient than the implementations in the Python standard library.
 
+# Algorithms
+
+## K-Nearest neighbor
+
 ## Neural Network
 
 手写神经网络算法
+
+    URL : Machine-Learning\Neural_network
 
 ## About Data
 
@@ -27,6 +33,5 @@ They are less efficient than the implementations in the Python standard library.
 
     * csv 格式：https://pjreddie.com/projects/mnist-in-csv/
    
-## Algorithms
 
 
