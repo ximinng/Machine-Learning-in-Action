@@ -7,6 +7,7 @@
 import numpy as np
 from math import sqrt
 from collections import Counter
+from k_nearest_neighbor.metric import accuracy_score
 
 
 class KNNClassifier:
@@ -58,13 +59,23 @@ class KNNClassifier:
         """
         assert x.shape[0] == self._X_train.shape[1], "the feature number of x must be equal to X_train"
 
-        distances = [sqrt(np.sum(x_train - x) ** 2) for x_train in self._X_train]
+        distances = [sqrt(np.sum((x_train - x) ** 2)) for x_train in self._X_train]
         nearest = np.argsort(distances)
 
         topK_y = [self._y_train[i] for i in nearest[:self.k]]
         votes = Counter(topK_y)
 
         return votes.most_common(1)[0][0]
+
+    def score(self, X_test, y_test):
+        """
+        accuracy
+        :param X_test:
+        :param y_test:
+        :return:
+        """
+        y_predict = self.predict(X_test)
+        return accuracy_score(y_test, y_predict)
 
     def __repr__(self):
         return "KNN (k=%d)" % self.k

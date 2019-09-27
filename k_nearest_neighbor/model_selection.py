@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-   Description : 
+   Description :   model_selection
    Author :        xxm
 """
 import numpy as np
@@ -28,6 +28,17 @@ def train_test_split(X, y, test_ratio=0.2, seed=None):
     return X_train, X_test, y_train, y_test
 
 
-from k_nearest_neighbor.kNN import KNNClassifier
+if __name__ == '__main__':
+    from sklearn import datasets
+    from k_nearest_neighbor.kNN import KNNClassifier
 
+    iris = datasets.load_iris()
 
+    X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, 0.2, seed=666)
+
+    knn_clf = KNNClassifier(k=3)
+    knn_clf.fit(X_train, y_train)
+    y_predict = knn_clf.predict(X_test)
+
+    print("预测结果: ", sum(y_test == y_predict))
+    print("准确率: ", sum(y_predict == y_test) / len(y_test))
