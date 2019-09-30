@@ -8,6 +8,8 @@ They are less efficient than the implementations in the Python standard library.
 
 ## K-Nearest neighbor
 
+[KNN](https://github.com/learnmedicalcantsavecn/Machine-Learning/blob/master/k_nearest_neighbor/kNN.py)
+
 ## Neural Network
 
 手写神经网络算法

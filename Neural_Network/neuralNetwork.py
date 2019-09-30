@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
 """
-   Description : neural network class definition
+   Description :   neural network
    Author :        xxm
 """
 import numpy as np
 import scipy.special as func
 
+import matplotlib.pyplot as plt
+
 
 class neuralNetwork:
 
-    def __init__(self,
-                 input_nodes,
-                 hidden_nodes,
-                 output_nodes,
-                 learning_rate):
+    def __init__(self, input_nodes, hidden_nodes, output_nodes, learning_rate):
         """initialise the neural network"""
 
         self.inodes = input_nodes
@@ -33,10 +31,9 @@ class neuralNetwork:
         # activation function is the sigmoid
         self.activation_function = lambda x: func.expit(x)
 
-    def train(self,
-              inputs_list,
-              targets_list):
+    def train(self, inputs_list, targets_list):
         """train the neural network"""
+
         # convert inputs list to 2d list
         inputs = np.array(inputs_list, ndmin=2).T
         targets = np.array(targets_list, ndmin=2).T
@@ -65,9 +62,9 @@ class neuralNetwork:
                                      np.transpose(inputs))
         pass
 
-    def query(self,
-              inputs_list):
+    def query(self, inputs_list):
         """query the neural network"""
+
         # convert inputs list to 2d list
         inputs = np.array(inputs_list, ndmin=2).T
 
@@ -87,12 +84,31 @@ class neuralNetwork:
 
 
 if __name__ == '__main__':
-    input_nodes = 3
-    hidden_nodes = 3
-    output_nodes = 3
+    # number of input,hidden and output nodes
+    input_nodes = 784  # 28 x 28
+    hidden_nodes = 100
+    output_nodes = 10  # 0...9
 
-    learning_rate = 0.5
+    # learning rate is 0.3
+    learning_rate = 0.3
 
     n = neuralNetwork(input_nodes, hidden_nodes, output_nodes, learning_rate)
 
-    print(n.query([1.0, 0.5, -1.5]))
+    # load the mnist training data csv file into a list
+    training_data_file = open("/Users/ximingxing/MNIST/mnist_train.csv", "r")
+    training_data_list = training_data_file.readlines()
+    training_data_file.close()
+
+    # train the neural network
+
+    # go though all records in the training data set
+    for record in training_data_list:
+        all_values = record.split(",")
+        # scale and shift the inputs
+        inputs = (np.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.1
+        # create the target output values
+        targets = np.zeros(output_nodes) + 0.1
+        targets[int(all_values[0])] = 0.99
+
+        n.train(inputs, targets)
+        pass
