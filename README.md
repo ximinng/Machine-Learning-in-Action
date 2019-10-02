@@ -8,13 +8,19 @@ They are less efficient than the implementations in the Python standard library.
 
 ## K-Nearest neighbor
 
-[KNN](https://github.com/learnmedicalcantsavecn/Machine-Learning/blob/master/k_nearest_neighbor/kNN.py)
+* kNN built by sk-learn 
+
+* kNN built by numpy
+ 
+* hyper parameters
+
+* metric --- calculate accuracy_score
+
+* model selection ---- train_test_split
 
 ## Neural Network
 
-手写神经网络算法
-
-    URL : Machine-Learning\Neural_network
+* 3-layer neural network built by numpy and performance score is 0.9757 
 
 ## About Data
 
@@ -31,9 +37,7 @@ They are less efficient than the implementations in the Python standard library.
    
 * MNIST Database
 
-手写数字
-
-    * csv 格式：https://pjreddie.com/projects/mnist-in-csv/
+csv 格式：https://pjreddie.com/projects/mnist-in-csv/
    
 
 
