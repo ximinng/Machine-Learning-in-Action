@@ -3,7 +3,6 @@
    Description : 
    Author :        xxm
 """
-import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 from sklearn import datasets
@@ -37,11 +36,11 @@ if __name__ == '__main__':
     plt.imshow(some_digit_image, cmap=matplotlib.cm.binary)
     plt.show()
 
-    from k_nearest_neighbor.model_selection import train_test_split
+    from KNN.function.model_selection import train_test_split
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_ratio=0.2)
 
-    from k_nearest_neighbor.kNN import KNNClassifier
+    from KNN.function.kNN import KNNClassifier
 
     knn_clf = KNNClassifier(k=3)
     knn_clf.fit(X_train, y_train)

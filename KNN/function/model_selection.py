@@ -30,7 +30,7 @@ def train_test_split(X, y, test_ratio=0.2, seed=None):
 
 if __name__ == '__main__':
     from sklearn import datasets
-    from k_nearest_neighbor.kNN import KNNClassifier
+    from KNN.function.kNN import KNNClassifier
 
     iris = datasets.load_iris()
 
