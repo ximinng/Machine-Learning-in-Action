@@ -42,11 +42,11 @@ Using [Pycharm with conda plugin](https://www.jetbrains.com/pycharm/promo/anacon
 Directory | Index
 ------------ | ------------
 **KNN** | -
-Manually implement KNN -- 手写KNN | Content in the second column 
-Hyper parameters with grid search -- 超参数与网格搜索 | Content in the second column
-Feature Scaling -- 数据归一化 | Content in the second column
+Manually implement KNN -- 手写KNN | [KNN.py](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/function/kNN.py)
+Hyper parameters with grid search -- 超参数与网格搜索 | [Hyper-Parameters.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Hyper-Parameters.ipynb)
+Feature Scaling -- 数据归一化 | [Feature-Scaling.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Feature-Scaling.ipynb)
 **Neural Network** | -
-make your own neural network -- 手写神经网络 | Content in the second column 
+make your own neural network -- 手写神经网络 | [neuralNetwork.py](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/Neural_Network/neuralNetwork.py)
 
 
 <h2 align="center">About</h2>
@@ -57,6 +57,7 @@ make your own neural network -- 手写神经网络 | Content in the second colum
 
 <h2 align="center">Acknowledgment</h2>
 <p align="right"><a href="#close_look_java"><sup>▴ Back to top</sup></a></p>
+
 Search for a specific pattern. Can't find one? Please report a new pattern [here](https://github.com/ximingxing/Machine-Learning-in-Action/issues).
 
 <h2 align="center">:speech_balloon: FAQ</h2>
