@@ -46,6 +46,8 @@ Manually implement KNN -- 手写KNN | [KNN.py](https://github.com/ximingxing/Mac
 Hyper parameters with grid search -- 超参数与网格搜索 | [Hyper-Parameters.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Hyper-Parameters.ipynb)
 Feature Scaling -- 数据归一化 | [Feature-Scaling.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Feature-Scaling.ipynb)
 Scaling in sk-learn -- sk-learn中的归一化| [Scaler-in-Scikit-Learn.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Scaler-in-Scikit-Learn.ipynb)
+**Linear Regression** | -
+Simple implementation  -- 简单实现 | [Simple-Linear-Regression-Implementation.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/Linear-Regression/Simple-Linear-Regression-Implementation.ipynb)
 **Neural Network** | -
 make your own neural network -- 手写神经网络 | [neuralNetwork.py](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/Neural_Network/neuralNetwork.py)
 
