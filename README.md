@@ -65,4 +65,3 @@ Search for a specific pattern. Can't find one? Please report a new pattern [here
 
 <h2 align="center">:speech_balloon: FAQ</h2>
 <p align="right"><a href="#close_look_java"><sup>▴ Back to top</sup></a></p>
-
