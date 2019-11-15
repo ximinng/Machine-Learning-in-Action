@@ -90,9 +90,12 @@ ENV/
 .ropeproject
 .DS_Store
 
-#idea
+# idea
 .idea/
 /idea/
 *.ipr
 *.iml
 *.iws
+
+# data
+/data

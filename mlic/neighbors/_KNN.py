@@ -44,8 +44,7 @@ class KNNClassifier:
         assert x.shape[0] == self._X_train.shape[1], \
             "the feature number of x must be equal to X_train"
 
-        distances = [sqrt(np.sum((x_train - x) ** 2))
-                     for x_train in self._X_train]
+        distances = [sqrt(np.sum((x_train - x) ** 2)) for x_train in self._X_train]
         nearest = np.argsort(distances)
 
         topK_y = [self._y_train[i] for i in nearest[:self.k]]
