@@ -45,7 +45,7 @@ class BernoulliNB:
         :param classes:
         :return:
         """
-        eps = 1e-4
+        eps = 2
         mean = self.parameters['class' + str(classes)]['mean']
         var = self.parameters['class' + str(classes)]['var']
 
@@ -55,9 +55,7 @@ class BernoulliNB:
         # 朴素贝叶斯假设(每个特征之间相互独立)
         # P(x1,x2,x3|Y) = P(x1|Y)*P(x2|Y)*P(x3|Y)
         result = np.sum(
-            np.log(numerator / denominator),
-            axis=1,
-            keepdims=True
+            np.log(numerator / denominator), axis=1, keepdims=True
         )
         return result.T
 

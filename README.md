@@ -1,4 +1,4 @@
-<h1 id="close_look_java" align="center">Machine Learning in Action</h1>
+<h1 id="mlic" align="center">Machine Learning in Action</h1>
 
 <p align="center">
     <a href="https://www.python.org/">
@@ -30,14 +30,16 @@ Open Source runs on love, laughter and a whole lot of coffee. Consider buying me
 
 <h2 align="center">:clipboard: Getting Started</h2>
 
-Using [Pycharm with conda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/) IDE makes getting started easier.
+1. Using [Pycharm with conda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/) IDE makes getting started easier.
 
-- check out from version control.
+    - check out from version control.
 
-- chose Git.
+    - chose Git.
+    
+2. python setup.py --develop
 
 <h2 align="center">Table of Contents</h2>
-<p align="right"><a href="#close_look_java"><sup>▴ Back to top</sup></a></p>
+<p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
 
 Directory | Index
 ------------ | ------------
@@ -59,9 +61,9 @@ make your own neural network -- 手写神经网络 | [neuralNetwork.py](https://
     csv download：https://pjreddie.com/projects/mnist-in-csv/
 
 <h2 align="center">Acknowledgment</h2>
-<p align="right"><a href="#close_look_java"><sup>▴ Back to top</sup></a></p>
+<p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
 
 Search for a specific pattern. Can't find one? Please report a new pattern [here](https://github.com/ximingxing/Machine-Learning-in-Action/issues).
 
 <h2 align="center">:speech_balloon: FAQ</h2>
-<p align="right"><a href="#close_look_java"><sup>▴ Back to top</sup></a></p>
+<p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>

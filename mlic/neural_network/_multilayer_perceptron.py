@@ -102,8 +102,7 @@ if __name__ == '__main__':
     training_data_list = training_data_file.readlines()
     training_data_file.close()
 
-    # train the neural network
-
+    """train the neural network"""
     # epochs is the number of times the training data set is used for training
     epochs = 10
 
