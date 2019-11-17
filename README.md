@@ -24,15 +24,12 @@
 <a href="https://ximingxing.github.io/">https://ximingxing.github.io/</a>
 </h6>
 
-# TODO： 完成readme
+Machine-Learning-in-Action是基于Peter Harrington的<<机器学习实战>>这本书, 将书中的机器学习算法和案例以scikit-learn的代码组织形式呈现.
 
-机器学习实战是基于Peter Harrington
+Machine-Learning-in-Action is based on Peter Harrington`s<<Macine Learning in Action>>, 
+The machine learning algorithms and cases in the book are presented in the form of scikit-learn code organization.
 
-A series of data structures and algorithms implemented using the Java language.
-
-Open Source runs on love, laughter and a whole lot of coffee. Consider buying me one if you find this content useful ☕️😉.
-
-<h2 align="center">:clipboard: Getting Started</h2>
+<h2 align="center">:clipboard: 快速开始 -  Getting Started</h2>
 
 1. Using [Pycharm with conda plugin](https://www.jetbrains.com/pycharm/promo/anaconda/) IDE makes getting started easier.
 
@@ -42,32 +39,23 @@ Open Source runs on love, laughter and a whole lot of coffee. Consider buying me
     
 2. python setup.py --develop
 
-<h2 align="center">Table of Contents</h2>
+<h2 align="center">内容 - Table of Contents</h2>
 <p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
 
-Directory | Index
------------- | ------------
-**KNN** | -
-Manually implement KNN -- 手写KNN | [KNN.py](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/function/kNN.py)
-Hyper parameters with grid search -- 超参数与网格搜索 | [Hyper-Parameters.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Hyper-Parameters.ipynb)
-Feature Scaling -- 数据归一化 | [Feature-Scaling.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Feature-Scaling.ipynb)
-Scaling in sk-learn -- sk-learn中的归一化| [Scaler-in-Scikit-Learn.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/KNN/Scaler-in-Scikit-Learn.ipynb)
-**Linear Regression** | -
-Simple implementation  -- 简单实现 | [Simple-Linear-Regression-Implementation.ipynb](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/Linear-Regression/Simple-Linear-Regression-Implementation.ipynb)
-**Neural Network** | -
-make your own neural network -- 手写神经网络 | [neuralNetwork.py](https://github.com/ximingxing/Machine-Learning-in-Action/blob/master/Neural_Network/neuralNetwork.py)
+```shell script
 
+```
 
-<h2 align="center">About</h2>
+<h2 align="center">关于 - About</h2>
 
-* MNIST Database
+你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
 
-    csv download：https://pjreddie.com/projects/mnist-in-csv/
+如果有问题也希望你指出.
 
-<h2 align="center">Acknowledgment</h2>
+<h2 align="center">鸣谢 - Acknowledgment</h2>
 <p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
 
-Search for a specific pattern. Can't find one? Please report a new pattern [here](https://github.com/ximingxing/Machine-Learning-in-Action/issues).
+* 代码组织参考[scikit-learn](https://github.com/scikit-learn/scikit-learn)中的组织结构
 
 <h2 align="center">:speech_balloon: FAQ</h2>
 <p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
