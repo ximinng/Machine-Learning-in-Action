@@ -5,6 +5,7 @@
 """
 
 import numpy as np
+from mlic.metrics import R_square
 
 
 class SimpleLinearRegression:
@@ -61,6 +62,14 @@ class SimpleLinearRegression:
         :return: scale
         """
         return self.a_ * x_single + self.b_
+
+    def score(self, x_test, y_test):
+        """
+        Evaluate the trained model.
+        :return: scale
+        """
+        y_predict = self.predict(x_test)
+        return R_square(y_test, y_predict)
 
     def __repr__(self):
         return "SimpleLinearRegression()"

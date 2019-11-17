@@ -8,7 +8,7 @@ from sklearn import datasets
 import matplotlib.pyplot as plt
 from mlic.utils import train_test_split
 from mlic.linear_model import SimpleLinearRegression
-from mlic.metrics import mean_squared_error, root_mean_squared_error, mean_absolute_error
+from mlic.metrics import mean_squared_error, root_mean_squared_error, mean_absolute_error, R_square
 
 """load data"""
 boston = datasets.load_boston()
@@ -47,3 +47,8 @@ rmse_test = root_mean_squared_error(y_test, y_predict)
 
 """MAE"""
 mae_test = mean_absolute_error(y_test, y_predict)
+
+"""R2 Score"""
+r2_score = R_square(y_test, y_predict)
+
+score = slr.score(x_test, y_test)
