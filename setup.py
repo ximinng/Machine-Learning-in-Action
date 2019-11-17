@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-   Description :   Package the app
+   Description :   Package the project
    Author :        xxm
 """
 

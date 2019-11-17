@@ -4,5 +4,6 @@
    Author :        xxm
 """
 from ._SimpleLinearRegression import SimpleLinearRegression
+from ._LinearRegreesion import LinearRegression
 
-__all__ = ['SimpleLinearRegression']
+__all__ = ['SimpleLinearRegression', 'LinearRegression']

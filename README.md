@@ -13,16 +13,20 @@
 </p>
 
 <p align="center">
-    <a href="#clipboard-getting-started">Getting Started</a> •
-    <a href="#table-of-contents">Table of Contents</a> •
-    <a href="#about">About</a> •
-    <a href="#acknowledgment">Acknowledgment</a> •
+    <a href="#clipboard-getting-started">快速开始 - Getting Started</a> •
+    <a href="#table-of-contents">内容 - Table of Contents</a> •
+    <a href="#about">关于 - About</a> •
+    <a href="#acknowledgment">鸣谢 - Acknowledgment</a> •
     <a href="#speech_balloon-faq">FAQ</a> •
 </p>
 
 <h6 align="center">Made by ximing Xing • :milky_way: 
 <a href="https://ximingxing.github.io/">https://ximingxing.github.io/</a>
 </h6>
+
+# TODO： 完成readme
+
+机器学习实战是基于Peter Harrington
 
 A series of data structures and algorithms implemented using the Java language.
 

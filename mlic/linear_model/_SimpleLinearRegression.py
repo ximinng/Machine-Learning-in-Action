@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-   Description : 
+   Description :   Simple Linear Regression learning unary function
    Author :        xxm
 """
 
