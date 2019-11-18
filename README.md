@@ -42,8 +42,29 @@ The machine learning algorithms and cases in the book are presented in the form 
 <h2 align="center">内容 - Table of Contents</h2>
 <p align="right"><a href="#mlic"><sup>▴ Back to top</sup></a></p>
 
-```shell script
-
+```
+├── LICENSE
+├── README.md
+├── data
+│   └── 20news-bydate_py3.pkz
+├── examples
+│   └── __init__.py
+├── mlic
+│   ├── cluster
+│   ├── linear_model
+│   ├── metrics
+│   ├── naive_bayes
+│   ├── neighbors
+│   ├── neural_network
+│   ├── svm
+│   ├── tree
+│   └── utils
+├── requestments.txt
+├── setup.py
+└── tests
+    ├── Bayes
+    ├── KNN
+    └── Linear
 ```
 
 <h2 align="center">关于 - About</h2>
