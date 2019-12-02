@@ -26,7 +26,9 @@
 
 Machine-Learning-in-Action是基于Peter Harrington的<<机器学习实战>>这本书, 将书中的机器学习算法和案例以scikit-learn的代码组织形式呈现.
 
-Machine-Learning-in-Action is based on Peter Harrington`s<<Macine Learning in Action>>, 
+除了算法机器学习算法之外，更重要的是算法的使用场景，这个代码仓库中也提供机器学习[实战案例](#center)
+
+Machine-Learning-in-Action is based on Peter Harrington`s <<Macine Learning in Action>> , 
 The machine learning algorithms and cases in the book are presented in the form of scikit-learn code organization.
 
 <h2 align="center">:clipboard: 快速开始 -  Getting Started</h2>
@@ -48,7 +50,7 @@ The machine learning algorithms and cases in the book are presented in the form 
 ├── data
 │   └── 20news-bydate_py3.pkz
 ├── examples
-│   └── __init__.py
+│   └── 20newsgroup_in_action
 ├── mlic
 │   ├── cluster
 │   ├── linear_model
@@ -68,6 +70,19 @@ The machine learning algorithms and cases in the book are presented in the form 
 ```
 
 <h2 align="center">关于 - About</h2>
+
+完整的数据挖掘过程 :
+1. 新闻文本分类实战 -- 20newsgroup_in_action
+
+    - DataLoader
+    - Data preprocessing
+        - Data Cleaning:  regular expersion
+        - Data Cleaning: stop words
+        - Normalization: lemmatization
+    - Extracting Features
+    - Model: bayes and svm
+    - Evaluation
+
 
 你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
 
