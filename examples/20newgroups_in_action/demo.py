@@ -18,6 +18,7 @@ from tqdm import tqdm
 from sklearn.datasets import fetch_20newsgroups
 
 train_set = fetch_20newsgroups(subset='train', shuffle=True, random_state=42)
+train_set
 
 print(train_set.data[:1])
 
