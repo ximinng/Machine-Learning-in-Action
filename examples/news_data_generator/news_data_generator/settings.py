@@ -79,9 +79,16 @@ HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'news_data_generator.pipelines.NewsDataGeneratorPipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'news_data_generator.pipelines.NewsDataGeneratorPipeline': 300,
+    'news_data_generator.pipelines.JsonWriterPipeline': 800,
+}
+
+# configure feed exporters
+FEED_EXPORTERS_BASE = {
+    'json': 'scrapy.contrib.exporter.JsonItemExporter',
+    'jsonlines': 'scrapy.contrib.exporter.JsonLinesItemExporter',
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
