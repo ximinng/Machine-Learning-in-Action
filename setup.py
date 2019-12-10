@@ -38,7 +38,7 @@ if __name__ == '__main__':
           install_requires=['numpy>=1.17.2',
                             'scikit-learn>=0.21.2',
                             'loguru>=0.3.2',
-                            'scipy>=1.3.1'],
+                            'scipy>=1.3.1', 'scrapy'],
           platforms='any',
           packages=find_packages(exclude=['/data', '*.pkz'])
           )

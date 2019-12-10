@@ -72,6 +72,10 @@ The machine learning algorithms and cases in the book are presented in the form 
 <h2 align="center">关于 - About</h2>
 
 完整的数据挖掘过程 :
+0. Data Generator
+    
+    - Scrapy-Splash based Crawler crawls information from [globaltimes.cn](http://www.globaltimes.cn/)
+
 1. 新闻文本分类实战 -- 20newsgroup_in_action
 
     - DataLoader
@@ -82,7 +86,6 @@ The machine learning algorithms and cases in the book are presented in the form 
     - Extracting Features
     - Model: bayes and svm
     - Evaluation
-
 
 你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
 
