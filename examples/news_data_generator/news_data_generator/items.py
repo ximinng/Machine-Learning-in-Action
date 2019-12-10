@@ -14,8 +14,8 @@ class NewsDataGeneratorItem(scrapy.Item):
     pass
 
 
-class GlobalTimesItems(scrapy.Item):
-    category = scrapy.Field()  # 分类
+class GlobalTimesArticleItems(scrapy.Item):
+    label = scrapy.Field()  # 分类
     title = scrapy.Field()  # 标题
     content = scrapy.Field()  # 内容
     pass
