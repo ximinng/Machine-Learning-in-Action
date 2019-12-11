@@ -72,11 +72,11 @@ The machine learning algorithms and cases in the book are presented in the form 
 <h2 align="center">关于 - About</h2>
 
 完整的数据挖掘过程 :
-0. Data Generator
-    
+0. 网络爬虫 Network Crawler
+    - 按分类爬取环球网英文本新闻(处理静态网站与需要js渲染的内容)
     - Scrapy-Splash based Crawler crawls information from [globaltimes.cn](http://www.globaltimes.cn/)
 
-1. 新闻文本分类实战 -- 20newsgroup_in_action
+1. 文本分类实战
 
     - DataLoader
     - Data preprocessing

@@ -16,12 +16,21 @@ Use Scrapy-Splash get dynamic website(which built by js).
 3. run crawl:
             scrapy crawl times -o items.jl        
             
-            {'china': 'http://globaltimes.cn/china', 'source': 'http://globaltimes.cn/source', 'world': 'http://globaltimes.cn/world', 'opinion': 'http://globaltimes.cn/opinion', 'life': 'http://globaltimes.cn/life', 'arts': 'http://globaltimes.cn/arts', 'sci-tech': 'http://globaltimes.cn/sci-tech', 'odd': 'http://globaltimes.cn/odd', 'sport': 'http://globaltimes.cn/sport', 'metro': 'http://globaltimes.cn/metro'}    
+            {'china': 'http://globaltimes.cn/china', 
+            'source': 'http://globaltimes.cn/source', 
+            'world': 'http://globaltimes.cn/world', 
+            'opinion': 'http://globaltimes.cn/opinion', 
+            'life': 'http://globaltimes.cn/life', 
+            'arts': 'http://globaltimes.cn/arts', 
+            'sci-tech': 'http://globaltimes.cn/sci-tech', 
+            'odd': 'http://globaltimes.cn/odd', 
+            'sport': 'http://globaltimes.cn/sport', 
+            'metro': 'http://globaltimes.cn/metro'}    
 """
 
 
 class GlobaltimesSpiderSpider(scrapy.Spider):
-    name = 'times'
+    name = 'timetwo'
 
     # allowed_domains = ['globaltimes.cn']
 
@@ -42,44 +51,26 @@ class GlobaltimesSpiderSpider(scrapy.Spider):
         }
 
     def start_requests(self):
-        lua_script = '''
-        function main(splash, args)
-            local ok, reason = splash:go(args.url)
-        end
-        '''
-
-        urls = [
-            'http://globaltimes.cn/',
-        ]
-        for url in urls:
-            # yield scrapy.Request(url=url, callback=self.parse)
-            yield SplashRequest(url, self.parse, args=self.args,
-                                endpoint='render.html',  # endpoint="execute" 执行lua
-                                splash_headers=self.headers)
+        urls = {'china': 'http://globaltimes.cn/china',
+                'source': 'http://globaltimes.cn/source',
+                'world': 'http://globaltimes.cn/world',
+                'opinion': 'http://globaltimes.cn/opinion',
+                'life': 'http://globaltimes.cn/life',
+                'arts': 'http://globaltimes.cn/arts',
+                'sci-tech': 'http://globaltimes.cn/sci-tech',
+                'odd': 'http://globaltimes.cn/odd',
+                'sport': 'http://globaltimes.cn/sport',
+                'metro': 'http://globaltimes.cn/metro'}
+        for site, url in urls.items():
+            yield scrapy.Request(url, callback=self.parse,
+                                 dont_filter=True,
+                                 meta={'label': site},
+                                 headers=self.headers)
 
     def parse(self, response):
         """
         处理分类,调用 parse_item 爬取信息
         :param response: start_url的相应
-        :return:
-        """
-        category: list[str] = response.xpath(
-            "//div[@class='nav-collapse collapse nav-channels']/ul/li[@class='dropdown']/a/text()"
-        ).getall()
-        sites = {i.lower(): 'http://globaltimes.cn/' + i.lower() for i in category[:-2]}
-
-        self.log("分类后sites集合: {}".format(sites))
-
-        for site, url in sites.items():
-            time.sleep(7)
-            yield scrapy.Request(url, callback=self.parse_site, dont_filter=True,
-                                 meta={'label': site},
-                                 headers=self.headers)
-
-    def parse_site(self, response):
-        """
-        处理分类后的网站
-        :param response: 分类网站的相应
         :return:
         """
         label = response.meta['label']

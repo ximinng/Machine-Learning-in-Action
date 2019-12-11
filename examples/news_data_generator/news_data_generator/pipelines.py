@@ -7,23 +7,38 @@
 
 from scrapy.exceptions import DropItem
 import json
+import jsonlines
 
 
 class NewsDataGeneratorPipeline(object):
     """
-    1. save item to json line
-    2. duplicate item found
+    duplicate item found
+    """
+
+    def __init__(self):
+        self.urlSet = set()
+
+    def process_item(self, item, spider):
+        if item['url'] in self.urlSet:
+            raise DropItem("Duplicate item found: %s" % item)
+        else:
+            self.urlSet.add(item['title'])
+            return item
+
+
+class JsonWriterPipeline(object):
+    """
+    save item to json line
     """
 
     def __init__(self):
         self.file = open('items.jl', 'wb')
-        self.titleSet = set()
 
     def process_item(self, item, spider):
-        if item['title'] in self.titleSet:
-            raise DropItem("Duplicate item found: %s" % item)
-        else:
-            self.titleSet.add(item['title'])
-            line = json.dumps(dict(item)) + "\n"
-            self.file.write(line)
-            return item
+        line = json.dumps(dict(item)) + "\n"
+        self.file.write(line)
+
+        # jl = json.loads(item)
+        # with jsonlines.open('output.jl', mode='a') as writer:
+        #     writer.write(jl)
+        return item
