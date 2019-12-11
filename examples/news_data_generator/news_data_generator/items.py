@@ -70,3 +70,7 @@ class NewsBaseItem(BaseItem):
 
 class CNNItem(NewsBaseItem):
     tag = scrapy.Field(output_processor=TakeFirst())
+
+
+class BBCItem(NewsBaseItem):
+    tag = scrapy.Field(output_processor=TakeFirst())

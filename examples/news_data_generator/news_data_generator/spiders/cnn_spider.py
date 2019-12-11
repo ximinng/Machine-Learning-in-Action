@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+   Description :   CNN news crawl
+   Author :        xxm
+"""
 import scrapy
-from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
 from ..items import CNNItem as CNN
 from time import time
@@ -202,7 +205,7 @@ class CnnSpider(CrawlSpider):
         base_ = self.base_url
         base_money = self.start_urls[1]
 
-        for url, tag in self.url_tags.iteritems():
+        for url, tag in self.url_tags.items():
 
             if url == '/china':  # done
                 yield Request(base_ + url, callback=self.china_list, meta={'tag': tag})
