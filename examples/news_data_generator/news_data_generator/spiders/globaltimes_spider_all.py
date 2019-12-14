@@ -38,4 +38,5 @@ class GlobaltimesSpiderSpider(scrapy.Spider):
         item['module'] = response.xpath('//*[@id="left"]/div[1]/a/text()').extract()
         item['type'] = response.xpath('//*[@id="left"]/div[5]/div[1]/a/text()').extract()
         item['content'] = response.xpath('//*[@id="left"]/div[4]').extract()
+        # content = response.xpath('//div[@class="span12 row-content"]/text()').extract()
         yield item
