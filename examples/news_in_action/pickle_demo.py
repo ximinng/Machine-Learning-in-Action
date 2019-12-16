@@ -15,7 +15,7 @@ train_list = [
 ]
 test_list = ['test one', 'test two']
 
-data_one = pickle.dump(
+pickle.dump(
     {
         'dict_': data_dict,
         'train_': train_list,
