@@ -91,9 +91,9 @@ The machine learning algorithms and cases in the book are presented in the form 
     
     <div style="margin-left: 30px">
     <h4>SVM Pipline</h4>
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="70%" height="50%">
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="60%" height="40%">
     <h4>Classification Report</h4>
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="60%" height="50%">    
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="50%" height="40%">    
     <br/>
     <h4>Confusion Matrix</h4>
     <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="60%" height="60%">
