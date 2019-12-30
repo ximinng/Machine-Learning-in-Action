@@ -90,8 +90,8 @@ The machine learning algorithms and cases in the book are presented in the form 
     - Evaluation
     
     <div style="margin-left: 30px">
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="700px" height="500px">
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="600px" height="500px">    
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="70%" height="50%">
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="60%" height="50%">    
     <br/>
     <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="600px" height="600px">
     </div>    
