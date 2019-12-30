@@ -90,10 +90,13 @@ The machine learning algorithms and cases in the book are presented in the form 
     - Evaluation
     
     <div style="margin-left: 30px">
+    <h4>SVM Pipline</h4>
     <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="70%" height="50%">
+    <h4>Classification Report</h4>
     <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="60%" height="50%">    
     <br/>
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="600px" height="600px">
+    <h4>Confusion Matrix</h4>
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="60%" height="60%">
     </div>    
 
 你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
