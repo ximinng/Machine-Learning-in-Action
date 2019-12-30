@@ -26,7 +26,7 @@
 
 Machine-Learning-in-Action是基于Peter Harrington的<<机器学习实战>>这本书, 将书中的机器学习算法和案例以scikit-learn的代码组织形式呈现.
 
-除了算法机器学习算法之外，更重要的是算法的使用场景，这个代码仓库中也提供机器学习[实战案例](#center)
+除了算法机器学习算法之外，更重要的是算法的使用场景，这个代码仓库中也提供机器学习[实战案例](#center)。包括：百万英文新闻文本分类实战等.
 
 Machine-Learning-in-Action is based on Peter Harrington`s <<Macine Learning in Action>> , 
 The machine learning algorithms and cases in the book are presented in the form of scikit-learn code organization.
@@ -72,20 +72,27 @@ The machine learning algorithms and cases in the book are presented in the form 
 <h2 align="center">关于 - About</h2>
 
 完整的数据挖掘过程 :
-0. 网络爬虫 Network Crawler
+1. 网络爬虫 Network Crawler
     - 按分类爬取环球网英文本新闻(处理静态网站与需要js渲染的内容)
     - Scrapy-Splash based Crawler crawls information from [globaltimes.cn](http://www.globaltimes.cn/)
+    - CNN Crawler
+    - BBC Crawler
 
-1. 文本分类实战
+2. 文本分类实战
 
-    - DataLoader
+    - DataLoader : 20newsgroup
     - Data preprocessing
-        - Data Cleaning:  regular expersion
+        - Data Cleaning: regular expression
         - Data Cleaning: stop words
         - Normalization: lemmatization
-    - Extracting Features
+    - Extracting Features : Word Dict and TF-IDF
     - Model: bayes and svm
     - Evaluation
+    
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="300px" height="300px">
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="300px" height="300px">    
+    <br/>
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="500px" height="500px">    
 
 你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
 
