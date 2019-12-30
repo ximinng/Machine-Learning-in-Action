@@ -89,10 +89,12 @@ The machine learning algorithms and cases in the book are presented in the form 
     - Model: bayes and svm
     - Evaluation
     
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="300px" height="300px">
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="300px" height="300px">    
+    <div style="margin-left: 30px">
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/svm_pipline.jpg" width="700px" height="500px">
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/report.jpg" width="600px" height="500px">    
     <br/>
-    <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="500px" height="500px">    
+    <img src="https://github.com/ximingxing/Images/raw/master/mlic/confusion.jpg" width="600px" height="600px">
+    </div>    
 
 你无需担心`example/`与`tests/`中案例所使用的数据集，因为数据集都是自动下载的.
 
